@@ -1,4 +1,4 @@
-<?php namespace Modules\Thinking\Contracts\Traits;
+<?php namespace Traits;
 
 use Illuminate\Support\Facades\DB;
 use Exception;
