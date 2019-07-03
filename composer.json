@@ -1,0 +1,23 @@
+{
+    "name": "alograg/tools",
+    "description": "Tools for Lumen/Laravel projects",
+    "type": "library",
+    "require": {
+        "php": ">=7.2.0",
+        "illuminate/support": "^5.9@dev",
+        "illuminate/database": "^5.9@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alograg",
+            "email": "henry@alograg.me"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Alograg\\": ""
+        }
+    },
+    "minimum-stability": "dev"
+}
