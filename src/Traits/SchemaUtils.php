@@ -3,6 +3,7 @@
 use Exception;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Fluent;
 use Illuminate\Support\Str;
 
 /**
@@ -165,12 +166,12 @@ SQL;
    * Retorna el resultado.
    *
    * @param  Blueprint  $table
-   * @param  string  $field
+   * @param  string|Fluent  $field
    * @param  string  $sourceTable
    * @param  string  $idField
    * @param  string  $deleteType
    *
-   * @return \Illuminate\Support\Fluent
+   * @return \Illuminate\Database\Schema\ColumnDefinition
    */
   protected function foreignTables(
     Blueprint $table,
@@ -180,14 +181,19 @@ SQL;
     $deleteType = 'cascade'
   ) {
     $table->engine = 'InnoDB';
-    $result = $table->unsignedInteger($field);
+    if (is_string($field)) {
+      $result = $table->unsignedInteger($field);
+    }else{
+      $result = $field;
+    }
     $fkName = 'FK_'.Str::singular($table->getTable()).'_'.Str::singular($sourceTable);
-    $table->index($field);
-    $table->foreign($field, $fkName)
+    $table->index($result->get('name'));
+    $table->foreign($result->get('name'), $fkName)
       ->references($idField)
       ->on($sourceTable)
       ->onUpdate('restrict')
-      ->onDelete($deleteType);
+      ->onDelete($deleteType)
+    ;
 
     return $result;
   }
