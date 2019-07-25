@@ -1,8 +1,14 @@
 # CHANGELOG
 
-[Version: v0.1.1]
+[Version: v0.1.2]
 
 ## Unreleased
+
+*  build(core): REST tools [View](./commits/5cbd3be34c31e873985255e1f763b45036312279)
+
+## v0.1.1 (2019-07-08)
+
+### Build system or external dependencies:
 
 *  build(core): Change path [View](./commits/dd6a36713904fd0ba250f8c39262b34114b7bbcb)
 
