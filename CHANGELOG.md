@@ -1,8 +1,14 @@
 # CHANGELOG
 
-[Version: v0.1.2]
+[Version: v0.1.3]
 
 ## Unreleased
+
+*  build(core): Schema Utils user predefinition field [View](./commits/6e71b2e76fe2c264c01c61e438c4e2f0446f9bea)
+
+## v0.1.2 (2019-07-25)
+
+### Build system or external dependencies:
 
 *  build(core): REST tools [View](./commits/5cbd3be34c31e873985255e1f763b45036312279)
 
