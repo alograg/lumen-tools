@@ -1,6 +1,4 @@
 # CONTRIBUTORS
 
-[Version: v0.1.3]
+[Version: v0.2.0]
 
-- Alograg <alograg@gmail.com>
-- Henry <alograg@users.noreply.github.com>

@@ -1,8 +1,14 @@
 # CHANGELOG
 
-[Version: v0.1.3]
+[Version: v0.2.0]
 
 ## Unreleased
+
+*  feat(tools): String tools [View](./commits/5cd2fa7d9243c3a4d40b06a3d6e9aa21ea6a74b7)
+
+## v0.1.3 (2019-07-25)
+
+### Build system or external dependencies:
 
 *  build(core): Schema Utils user predefinition field [View](./commits/6e71b2e76fe2c264c01c61e438c4e2f0446f9bea)
 
